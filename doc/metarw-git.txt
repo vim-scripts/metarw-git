@@ -1,6 +1,7 @@
-*metarw_git.txt*	metarw scheme: git
+*metarw-git.txt*	metarw scheme: git
 
-Version 0.0.1
+Version 0.0.2
+Script ID: 2336
 Copyright (C) 2008 kana <http://whileimautomaton.net/>
 License: MIT license  {{{
     Permission is hereby granted, free of charge, to any person obtaining
@@ -36,16 +37,19 @@ Changelog		|metarw-git-changelog|
 ==============================================================================
 INTRODUCTION					*metarw-git-introduction*
 
-metarw-git is a scheme for |metarw| to read or to browse various objects in
+*metarw-git* is a scheme for |metarw| to read or to browse various objects in
 a git repository with fakepaths like "git:HEAD~3:src/ui.c".
 
 Note that this scheme just supports reading from an object.  Writing to an
 object is not supported.
 
+
 Requirements:
-- Vim 7.1.299 or later.
-- metarw 0.0.0 or later.
-  <http://www.vim.org/scripts/script.php?script_id=2335>
+- Vim 7.1.299 or later
+- metarw 0.0.0 or later (vimscript#2335)
+
+Latest version:
+http://github.com/kana/config/commits/vim-metarw-git
 
 
 
@@ -100,6 +104,10 @@ BUGS						*metarw-git-bugs*
 ==============================================================================
 CHANGELOG					*metarw-git-changelog*
 
+0.0.2	2009-05-06T03:34:11+09:00
+	- Fix a bug that metarw-git uses wrong function to escape file-like
+	  arguments to shells.  Thanks @thinca for reporting this.
+
 0.0.1	2008-08-10T12:20:41+09:00
 	- Fix requirements - metarw-git uses |fnameescape()| which is added
 	  since Vim 7.1.299.  (thanks to id:thinca)
@@ -111,4 +119,4 @@ CHANGELOG					*metarw-git-changelog*
 
 
 ==============================================================================
-vim:tw=78:ts=8:ft=help:norl:fdm=marker:
+vim:tw=78:ts=8:ft=help:norl:fen:fdl=0:fdm=marker:
